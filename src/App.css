@@ -23,11 +23,12 @@
 
 .body {
     color: var(--text);
-    min-height: 100vh;
     background-color: var(--prime);
 }
-#main {
+.main {
     position: relative;
+    min-height: 100vh;
+
 
 }
 a {

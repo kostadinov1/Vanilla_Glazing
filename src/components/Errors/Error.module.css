@@ -1,0 +1,40 @@
+.error {
+    min-height: 100vh;
+}
+
+.info_box {
+    position: relative;
+    top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.1em;
+
+    
+    max-width: 50vw;
+    min-height: 50vh;
+    margin: 0em auto;
+    padding: 2em;
+    
+    background-color: var(--prime);
+    border: 0.2em solid var(--sec);
+    border-radius: var(--b-radius);
+    overflow: hidden;
+}
+
+.info_box > * {
+    padding: 1em;
+    border: 0.1em solid var(--sec-2);
+    border-radius: var(--b-radius);
+    overflow: hidden;
+}
+
+.err_h1 {
+    font-size: 80px;
+    padding: 0.3em;
+    border: 0.04em solid var(--sec);
+    border-radius: var(--b-radius);
+    overflow: hidden;
+}
