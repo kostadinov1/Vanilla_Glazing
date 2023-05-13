@@ -1,5 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Album from './components/Albums/Album/Album';
+import Albums from './components/Albums/Albums';
 import Error404 from './components/Errors/Error404';
 import Home from './components/Home/Home';
 import Footer from './components/Main/Footer/Footer';
@@ -12,7 +14,9 @@ function App() {
           <div className={'main'}>
             <Routes>
               <Route path='/' element={<Home />}/>
-              <Route path='/projects' element={<Home />}/>
+              <Route path='/projects' element={<Albums />}/>
+              <Route path='/album/:id/' element={<Album />}/> 
+
               <Route path='/products' element={<Home />}/>
               <Route path='/services' element={<Home />}/>
               <Route path='/contacts' element={<Home />}/>
