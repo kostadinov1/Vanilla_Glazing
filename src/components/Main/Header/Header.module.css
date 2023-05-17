@@ -3,16 +3,20 @@
     display: flex;
     gap: .2em;
     
-    background-color: var(--sec-2);
+    background-color: var(--prime);
+    border: 1px solid var(--text);
+    letter-spacing: 1.4pt;
+
 }
 .logo {
-
-    padding: .2em;
+    display: flex;
+    gap: .2em;
+    max-height: 120px;
+    max-width: 51px;
 }
 
-.logo_label {
-
-    padding: .2em;
+.logo_image {
+    object-fit: cover;
 }
 
 .ul {
@@ -20,11 +24,15 @@
     display: flex;
     list-style: none;
     gap: 2em;
-    padding: .2em;
+    padding: .6em;
 
 }
 
 .link {
     font-size: 1.2rem;
-    padding: .2em;
+    padding: .6em;
+    color: var(--text);
+}
+.link:hover {
+    background-color: var(--acc-2);
 }

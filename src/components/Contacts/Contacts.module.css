@@ -1,0 +1,23 @@
+
+.contacts {
+    display: flex;
+    gap: 1em;
+    height: 40vh;
+    width: 100vw;
+    padding: .4em;
+}
+
+.left_card {
+    width: 50%;
+    height: 100%;
+}
+
+.right_card {
+    color: var(--text);
+    padding: .4em;
+    letter-spacing: 1.4pt;
+}
+
+.right_card h1 {
+    text-align: center;
+}

@@ -2,13 +2,15 @@ import styles from './Header.module.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 function Header() {
   return (
     <div className={`${styles.header}`}>
-                <img alt='' className={styles.logo} />
-        <Link to={'/'}>
-            <div className={styles.logo_label}>Stil Komfort</div>
-        </Link>
+        <div className={styles.logo}>
+            <Link to={'/'}>
+                <img src='/logo/dogramaLogoOnly.png'  alt='' className={styles.logo_image} />
+            </Link>
+        </div>
         <ul className={styles.ul}>
                <li className={styles.li}>
                     <Link to={'/'} className={styles.link}>Home</Link>
