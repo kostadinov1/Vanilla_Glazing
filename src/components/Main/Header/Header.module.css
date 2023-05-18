@@ -3,7 +3,7 @@
     display: flex;
     gap: .2em;
     
-    background-color: var(--prime);
+    background-color: var(--sec);
     border: 1px solid var(--text);
     letter-spacing: 1.4pt;
 
@@ -31,7 +31,8 @@
 .link {
     font-size: 1.2rem;
     padding: .6em;
-    color: var(--text);
+    color: var(--prime);
+
 }
 .link:hover {
     background-color: var(--acc-2);

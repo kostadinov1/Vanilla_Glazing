@@ -1,9 +1,9 @@
 :root {
     /* --- Colors --- */
-    --prime: rgb(25, 24, 24);
-    --sec: #CF0A0A;
+    --prime: black;
+    --sec: #ffd700;
     --sec-2: #DC5F00;
-    --acc-1: #fc8f3a;
+    --acc-1: #ff0000;
     --acc-2: orangered;
     --acc-3: rgb(230, 144, 31);
     --text: #EEEEEE;
