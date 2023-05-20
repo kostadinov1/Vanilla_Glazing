@@ -7,16 +7,16 @@ const HeroCarousel = () => (
     autoplay
   >
     <div className={`${styles.caro_image_box}`}>
-      <img src={'images/backgrounds/background-01.jpg'} alt='hero_image'></img>
+      <img src={'images/backgrounds/background-04.jpg'} alt='hero_image'></img>
     </div>
     <div className={`${styles.caro_image_box}`}>
-      <img src={'/images/backgrounds/background-02.jpg'} alt='hero_image'></img>
+      <img src={'/images/backgrounds/background-05.jpg'} alt='hero_image'></img>
     </div>
     <div className={`${styles.caro_image_box}`}>
-      <img src={'/images/backgrounds/background-03.jpg'} alt='hero_image'></img>
+      <img src={'/images/backgrounds/background-13.jpg'} alt='hero_image'></img>
     </div>
     <div className={`${styles.caro_image_box}`}>
-      <img src={'/images/backgrounds/background-04.jpg'} alt='hero_image'></img>
+      <img src={'/images/backgrounds/background-09.jpg'} alt='hero_image'></img>
     </div>
   </Carousel>
 );

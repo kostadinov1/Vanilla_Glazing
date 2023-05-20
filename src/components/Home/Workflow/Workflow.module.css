@@ -1,0 +1,11 @@
+.img {
+    display: flex;
+}
+
+.img_2 {
+    flex-direction: row-reverse;
+}
+
+.img_description {
+    
+}

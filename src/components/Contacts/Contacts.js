@@ -19,7 +19,7 @@ function Contacts() {
     <>
         <div className={`${styles.contacts}`}>
             <div className={`${styles.left_card}`}>
-                <img alt='' src={'/images/backgrounds/background-01.jpg'}></img>
+                <img alt='' src={'/images/placeholders/contacts.jpg'}></img>
             </div>
             <div className={`${styles.right_card}`}>
                 <h1>Contact Us</h1>

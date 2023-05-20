@@ -4,25 +4,25 @@
     min-width: 30vw;
     font-size: .8rem;
     text-align: center;
-    border-radius: var(--b-radius);
     letter-spacing: .4pt;
     overflow: scroll;
+    background-color: var(--dimmer);
+    border-radius: var(--b-radius);
     border-top: .1em solid var(--text);
     border-bottom: .1em solid var(--text);
     list-style: none;
     font-size: .8rem;
     font-weight: 500;
     text-align: center;
-    border-radius: var(--b-radius);
     letter-spacing: .4pt;
 
 }
 
 .title {
     border-radius: var(--b-radius);
-    border-top: .1em solid var(--acc-1);
-    border-bottom: .1em solid var(--acc-1);
-    background-color: var(--sec-2);
+    border-top: .1em solid var(--acc-2);
+    border-bottom: .1em solid var(--acc-2);
+    background-color: var(--dimmer);
 }
 
 .subtitle {
