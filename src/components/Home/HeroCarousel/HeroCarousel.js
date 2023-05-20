@@ -3,7 +3,7 @@ import styles from './HeroCarousel.module.css'
 
 const HeroCarousel = () => (
   <Carousel effect="fade" 
-    dotPosition='top'
+    dotPosition='bottom'
     autoplay
   >
     <div className={`${styles.caro_image_box}`}>

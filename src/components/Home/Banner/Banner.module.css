@@ -1,0 +1,52 @@
+.banner {
+    position: absolute;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+
+    font-size: 1.4rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    border-radius: var(--b-radius);
+    letter-spacing: 1pt;
+    padding: 2em 5em;
+    /* background-color: rgba(0, 0, 0, 0.818); */
+    overflow: scroll;
+    z-index: 10;
+}
+
+.title {
+    font-size: 8rem;
+    font-weight: bold;
+    font-family: 'Bodoni Moda', serif;
+
+    padding: .2em .8em;
+    border-radius: var(--b-radius);
+    border-top: 1px solid var(--acc-2);
+    border-bottom: 1px solid var(--acc-2);
+    background-color: var(--dimmer);
+
+}
+
+.subtitle {
+    padding: .8em;
+    /* margin: .2em; */
+    font-size: 2.6rem;
+    font-weight: 500;
+    border-radius: var(--b-radius);
+    border-top: 1px solid var(--acc-2);
+    border-bottom: 1px solid var(--acc-2);
+    background-color: var(--dimmer);
+
+}
+.pdiv {
+    background-color: var(--dimmer);
+
+    padding: .2em 8em;
+    text-align: center;
+
+    border-radius: var(--b-radius);
+    border-top: 1px solid var(--acc-2);
+    border-bottom: 1px solid var(--acc-2);    border-radius: var(--b-radius);
+}
+
+

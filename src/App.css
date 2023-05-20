@@ -1,26 +1,25 @@
 :root {
     /* --- Colors --- */
-    --prime: black;
-    --sec: #ffd700;
+    --prime: #36454f;
+    --sec: #a1b1bd;
     --sec-2: #DC5F00;
-    --acc-1: #ff0000;
+    --acc-1: #00bfff;
     --acc-2: orangered;
     --acc-3: rgb(230, 144, 31);
-    --text: #EEEEEE;
+    --text: #a1b1bd;
 
     --bg: #e6f4f1;
-    --dimmer: rgba(0, 5, 6, 0.607);
+    --dimmer: rgba(0, 0, 0, 0.807);
 
     /* --- Values --- */
     --b-radius: 8px;
     --bg-color: rgba(209, 205, 21, 0.967);
 
     /*   Fonts
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    font-family: 'Merriweather', serif;
-    font-family: 'Montserrat', sans-serif;
+      font-family: 'Bodoni Moda', serif;
+      font-family: 'Merriweather', serif;
+      font-family: 'Montserrat', sans-serif;
+
      */
 }
 
@@ -28,8 +27,7 @@
 .body {
     color: var(--text);
     background-color: var(--prime);
-    font-family: 'Merriweather', serif;
-    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
 
 }
 .main {
@@ -38,13 +36,13 @@
 
 
 }
-/* a {
+a {
     text-decoration: none;
-    color: var(--text);
+    color: var(--prime);
   }
   a:hover {
-    color: var(--sec);
-} */
+    color: var(--acc-2);
+}
 
 button {
     position: relative;
