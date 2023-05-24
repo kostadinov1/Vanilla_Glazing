@@ -1,6 +1,7 @@
 import styles from './Header.module.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 
 
 function Header() {
@@ -12,22 +13,32 @@ function Header() {
             </Link>
         </div>
         <ul className={styles.ul}>
+
                <li className={styles.li}>
+                    {/* <NavLink
+                        to="/"
+                        className={`${({ isActive, isPending }) =>
+                            isPending ? "pending" : isActive ? "active" : "link"} ${styles.link}`}
+                        >
+                        Начало
+                    </NavLink> */}
                     <Link to={'/'} className={styles.link}>Home</Link>
                 </li>
                 <li className={styles.li}>
-                    <Link to={'/projects'} className={styles.link}> Projects</Link>
+                    <Link to={'/projects'} className={styles.link}> Проекти</Link>
                 </li>
                 <li className={styles.li}>
-                    <Link to={'/products'} className={styles.link}> Products</Link>
+                    <Link to={'/products'} className={styles.link}> Продукти</Link>
                 </li>
                 <li className={styles.li}>
-                    <Link to={'/services'} className={styles.link}> Services</Link>
+                    <Link to={'/services'} className={styles.link}> Услуги</Link>
                 </li>
                 <li className={styles.li}>
-                    <Link to={'/contacts'} className={styles.link}> Contacts</Link>
+                    <Link to={'/contacts'} className={styles.link}> Контакти</Link>
                 </li>
         </ul>
+
+        
     </div>
   )
 }
