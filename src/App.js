@@ -8,6 +8,7 @@ import Home from './components/Home/Home';
 import Footer from './components/Main/Footer/Footer';
 import Header from './components/Main/Header/Header';
 import Contacts from './components/Contacts/Contacts';
+import Services from './components/Services/Services';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
               <Route path='/album/:id/' element={<Album />}/> 
 
               <Route path='/products' element={<Home />}/>
-              <Route path='/services' element={<Home />}/>
+              <Route path='/services' element={<Services />}/>
               <Route path='/contacts' element={<Contacts />}/>
 
               <Route path='*' element={<Error404 />}/>
