@@ -3,7 +3,7 @@ import React from 'react'
 
 const ServiceCard = ({service}) => {
   return (
-    <div className={`${styles.card}`}>
+    <div style={{backgroundImage: `url(${service.image})`}} className={`${styles.card}`}>
         <div class="card">
             <div className={`${styles.card_content}`}>
                 <p className={`${styles.card_title}`}>{service.name}</p>
