@@ -18,32 +18,35 @@
     font-size: 8rem;
     font-weight: bold;
     font-family: 'Bodoni Moda', serif;
-
-    padding: .2em .8em;
+    text-shadow: 2px 2px 25px black;
+    padding: .2em .2em;
     /* border-radius: var(--b-radius); */
     border-top: 1px solid var(--acc-2);
     border-bottom: 1px solid var(--acc-2);
-    background-color: var(--dimmer);
+    background-color: var(--dimmer-2);
+    
 
 }
 
 .subtitle {
-    padding: .8em;
-    /* margin: .2em; */
+    padding: .4em;
     font-size: 2.6rem;
     font-weight: 500;
-    /* border-radius: var(--b-radius); */
-    border-top: 1px solid var(--acc-2);
-    border-bottom: 1px solid var(--acc-2);
+    /* border: 2px solid var(--acc-2); */
+    border-top: 2px solid var(--acc-2);
+    border-bottom: 2px solid var(--acc-2);
+    text-shadow: 2px 2px 25px black;
+
     background-color: var(--dimmer);
+    scale: 1.05;
 
 }
 .pdiv {
-    background-color: var(--dimmer);
-
+    background-color: var(--dimmer-2);
     padding: .2em 8em;
     text-align: center;
-
+    text-shadow: 2px 2px 25px black;
+    color: var(--bg);
     /* border-radius: var(--b-radius); */
     border-top: 1px solid var(--acc-2);
     border-bottom: 1px solid var(--acc-2);    

@@ -17,12 +17,17 @@ const Services = () => {
   }, [])
 
   return (
+    <>
+        <div className={`section_title`}>
+          Услуги
+        </div>
     <div className={`${styles.services}`}>
         {services ? services.map((service) => <ServiceCard 
                                                     key={service.id} 
                                                     service={service} />) : <p>NO SERVICES YET</p>}
         
     </div>
+                                                    </>
   )
 }
 

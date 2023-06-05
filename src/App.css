@@ -8,8 +8,10 @@
     --acc-3: rgb(230, 144, 31);
     --text: #a1b1bd;
 
-    --bg: #e6f4f1;
+    --bg: #cfd8dc;
     --dimmer: rgba(0, 0, 0, 0.807);
+    --dimmer-2: rgba(0, 0, 0, 0.507);
+
 
     /* --- Values --- */
     --b-radius: 8px;
@@ -116,4 +118,15 @@ button {
       opacity: 0;
     }
   }
+
+.section_title {
+    /* background-color: var(--dimmer); */
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: .2em;
+    width: 50vw;
+    margin: .2em auto;
+    border: 2px solid var(--acc-2);
+    clip-path: polygon(4% 0, 96% 0, 100% 100%, 0% 100%);}
   

@@ -17,7 +17,7 @@ function Home() {
         setServices(res)
         console.log('res', res);})
       .catch((res) => {console.log('res error', res);})
-  }, [])
+  }, [])                
   
   return (
     <div>
@@ -27,7 +27,8 @@ function Home() {
       <div className={`${styles.services}`}>
         {services ? services.map((service) => <ServiceCard 
                                                     key={service.id} 
-                                                    service={service} />) : <p>NO SERVICES YET</p>}
+                                                    service={service} />) 
+        : <p>NO SERVICES YET</p>}
         
     </div>
     </div>
