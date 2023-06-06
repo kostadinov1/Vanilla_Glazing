@@ -2,39 +2,37 @@
 .header {
     display: flex;
     gap: .2em;
-    
     background-color: var(--prime);
     border: 1px solid var(--text);
     letter-spacing: 1.4pt;
-
 }
-
 .logo {
     display: flex;
     gap: .2em;
     max-height: 120px;
     max-width: 51px;
 }
-
 .logo_image {
     object-fit: cover;
 }
-
 .ul {
     margin: auto auto;
     display: flex;
     list-style: none;
     gap: 2em;
-    padding: .6em;
-
+    /* padding: .6em; */
 }
-
-.link {
-    font-size: 1.2rem;
-    padding: .6em;
-    color: var(--text);
-
+.li {
 }
 .link:hover {
     background-color: black;
+    color: var(--acc-2);
 }
+.link {
+    font-size: 1.2rem;
+    color: var(--text);
+    padding: .7em .9em;
+}
+
+
+

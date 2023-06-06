@@ -5,11 +5,11 @@
     --sec-2: #DC5F00;
     --acc-1: #00bfff;
     --acc-2: #ff4500;
-    --acc-3: rgb(230, 144, 31);
+    --acc-3: rgb(230, 121, 31);
     --text: #a1b1bd;
 
     --bg: #cfd8dc;
-    --dimmer: rgba(0, 0, 0, 0.807);
+    --dimmer: rgba(0, 0, 0, 0.957);
     --dimmer-2: rgba(0, 0, 0, 0.507);
 
 
@@ -120,7 +120,6 @@ button {
   }
 
 .section_title {
-    /* background-color: var(--dimmer); */
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
@@ -130,3 +129,9 @@ button {
     border: 2px solid var(--acc-2);
     clip-path: polygon(4% 0, 96% 0, 100% 100%, 0% 100%);}
   
+.active {
+  background-color: var(--dimmer);
+  color: var(--acc-2);
+
+}
+

@@ -29,7 +29,7 @@
 }
 
 .subtitle {
-    padding: .4em;
+    padding: .6em .2em;
     font-size: 2.6rem;
     font-weight: 500;
     /* border: 2px solid var(--acc-2); */

@@ -10,9 +10,12 @@
     transform-style: preserve-3d;
     perspective: 1000px;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    border: 1px solid var(--acc-2);
+
   }
   
   .card_content {
+    letter-spacing: 1.1pt;
     padding: 20px;
     position: relative;
     z-index: 1;
@@ -24,23 +27,29 @@
     justify-content: center;
     text-align: center;
     height: 100%;
+    overflow: hidden;
   }
   
   .card_content .card_title {
     font-size: 1.2rem;
-    color: var(--sec);
+    color: var(--acc-3);
     font-weight: 700;
     text-transform: uppercase;
+    background-color: var(--dimmer);
+    padding: .2em 1.2em;
+    border-radius: var(--b-radius);
   }
   
   .card_content .card_para {
-    padding: .2em;
+    padding: .4em;
     opacity: 0.8;
     font-size: 14px;
     font-size: 1.2rem;
     background-color: var(--dimmer);
     overflow: scroll;
     border-radius: var(--b-radius);
+    border: 1px solid var(--acc-2);
+
   }
   
   .card:hover {
