@@ -130,8 +130,8 @@ button {
     clip-path: polygon(4% 0, 96% 0, 100% 100%, 0% 100%);}
   
 .active {
-  background-color: var(--dimmer);
-  color: var(--acc-2);
+  background-color: var(--dimmer-2);
+  color: red;
 
 }
 
