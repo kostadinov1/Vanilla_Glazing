@@ -23,3 +23,4 @@ export const getProduct = async (productId) => {
         throw product
     }
 }
+
