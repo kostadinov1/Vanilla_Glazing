@@ -21,15 +21,15 @@ const Products = () => {
 
   return (
     <div className={`${styles.products}`}>
-      <div>
-        Products
-      </div>
-        {products ? 
-		products.map((product) => 
-				<ProductCard 
-					product={product} 
-					key={product.id} />) 
-		: <p>no products</p>}
+		<div className={`section_title`}>Products</div>
+		<div className={`${styles.products_list}`}>
+			{products ? 
+			products.map((product) => 
+					<ProductCard 
+						product={product} 
+						key={product.id} />) 
+			: <p>no products</p>}
+		</div>
     </div>
   )
 }

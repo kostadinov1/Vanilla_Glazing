@@ -22,6 +22,7 @@ function App() {
               <Route path='/album/:id/' element={<Album />}/> 
 
               <Route path='/products' element={<Products />}/>
+              <Route path='product/:id/' element={<Products/>}/>
               <Route path='/services' element={<Services />}/>
               <Route path='/contacts' element={<Contacts />}/>
 
