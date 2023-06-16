@@ -14,7 +14,7 @@ function Footer() {
             <li className={styles.li}><Link to={'/contacts'}> Contacts</Link></li>
         </ul>
   
-        <ul className={styles.ul} type='list'>
+        <ul className={`${styles.ul} ${styles.useful_links}`} type='list'>
             <li><a href='#'>Useful Link</a></li>
             <li><a href='#'>Useful Link</a></li>
             <li><a href='#'>Useful Link</a></li>

@@ -2,7 +2,9 @@ import { Carousel } from 'antd';
 import styles from './HeroCarousel.module.css'
 
 const HeroCarousel = () => (
-  <Carousel effect="fade" 
+  <Carousel 
+    className={`${styles.hero_carousel}`}
+    effect="fade" 
     dotPosition='bottom'
     autoplay
   >

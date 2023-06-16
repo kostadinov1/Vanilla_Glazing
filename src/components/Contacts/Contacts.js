@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import styles from './Contacts.module.css'
 import { getCompanyInfo } from '../../api/companyInfo'
 import SimpleMap from './Map'
+import ContactsCard from '../Common/ContactsCard/ContactsCard'
 
 function Contacts() {
   const [companyInfo, setCompanyInfo] = useState({})
@@ -14,21 +15,16 @@ function Contacts() {
     .catch()
   }, [])
 
-  console.log(companyInfo, 'company info');
   return (
     <>
         <div className={`${styles.contacts}`}>
-            <div className={`${styles.left_card}`}>
-                <img alt='' src={'/images/placeholders/contacts.jpg'}></img>
+            <div className={`${styles.banner}`}>
+				<h2 className={`${styles.title} section_title`}>Contacts</h2>
             </div>
-            <div className={`${styles.right_card}`}>
-                <h1>Contact Us</h1>
-                <h2>Address: {companyInfo.address}</h2>
-                <h2>Email: {companyInfo.email}</h2>
-                <h2>Phone: {companyInfo.phone}</h2>
-            </div>
-        </div>
+			<div className={`${styles.info}`}>
 
+			</div>
+        </div>
         <SimpleMap></SimpleMap>
     </>
   )

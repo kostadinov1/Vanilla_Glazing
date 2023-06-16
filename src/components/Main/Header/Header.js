@@ -17,27 +17,27 @@ function Header() {
                 <NavLink to={'/'} 
                     activeClassName={'active'} 
                     className={styles.link}> 
-                    <HomeFilled/> Начало
+                    <HomeFilled className={`${styles.icon}`}/> Начало
                 </NavLink>
                 <NavLink to={'/projects'} 
                     activeClassName={'active'} 
                     className={styles.link}>
-                    <ScheduleFilled/> Проекти
+                    <ScheduleFilled className={`${styles.icon}`}/> Проекти
                 </NavLink>
                 <NavLink to={'/products'} 
                     activeClassName={'active'} 
                     className={styles.link}>
-                    <ShopFilled/> Продукти
+                    <ShopFilled className={`${styles.icon}`}/> Продукти
                 </NavLink>
                 <NavLink to={'/services'} 
                     activeClassName={'active'} 
                     className={styles.link}>
-                    <ToolFilled/> Услуги
+                    <ToolFilled className={`${styles.icon}`}/> Услуги
                 </NavLink>
                 <NavLink to={'/contacts'} 
                     activeClassName={'active'} 
                     className={styles.link}>
-                    <PhoneFilled/> Контакти
+                    <PhoneFilled className={`${styles.icon}`}/> Контакти
                 </NavLink>
             </nav>        
         </div>

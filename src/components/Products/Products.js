@@ -21,7 +21,7 @@ const Products = () => {
 
   return (
     <div className={`${styles.products}`}>
-		<div className={`section_title`}>Products</div>
+		<div className={`section_title`}>Продукти</div>
 		<div className={`${styles.products_list}`}>
 			{products ? 
 			products.map((product) => 

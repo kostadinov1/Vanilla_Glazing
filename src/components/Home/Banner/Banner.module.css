@@ -6,11 +6,9 @@
 
     font-size: 1.4rem;
     font-family: 'Montserrat Alternates', sans-serif;
-    /* border-radius: var(--b-radius); */
     letter-spacing: 1pt;
     padding: 2em 5em;
-    /* background-color: rgba(0, 0, 0, 0.818); */
-    overflow: scroll;
+    overflow: hidden;
     z-index: 10;
 }
 
@@ -20,7 +18,6 @@
     font-family: 'Bodoni Moda', serif;
     text-shadow: 2px 2px 25px black;
     padding: .2em .2em;
-    /* border-radius: var(--b-radius); */
     border-top: 1px solid var(--acc-2);
     border-bottom: 1px solid var(--acc-2);
     background-color: var(--dimmer-2);
@@ -30,9 +27,8 @@
 
 .subtitle {
     padding: .6em .2em;
-    font-size: 2.6rem;
+    font-size: 2rem;
     font-weight: 500;
-    /* border: 2px solid var(--acc-2); */
     border-top: 2px solid var(--acc-2);
     border-bottom: 2px solid var(--acc-2);
     text-shadow: 2px 2px 25px black;
@@ -43,13 +39,68 @@
 }
 .pdiv {
     background-color: var(--dimmer-2);
-    padding: .2em 8em;
+    padding: .2em 4.8em;
     text-align: center;
     text-shadow: 2px 2px 25px black;
     color: var(--bg);
-    /* border-radius: var(--b-radius); */
     border-top: 1px solid var(--acc-2);
     border-bottom: 1px solid var(--acc-2);    
+}
+
+
+@media (max-width:600px) {
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        height: 80vh;
+        width: 100vw;
+    
+        font-size: 0.8rem;
+        font-family: 'Montserrat Alternates', sans-serif;
+        letter-spacing: 1pt;
+        padding: 1.2em 1.5em;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 10;
+    }
+    
+    .title {
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: 'Bodoni Moda', serif;
+        text-shadow: 2px 2px 25px black;
+        padding: .2em .2em;
+        border-top: 1px solid var(--acc-2);
+        border-bottom: 1px solid var(--acc-2);
+        background-color: var(--dimmer-3);
+    }
+    .subtitle {
+        padding: .6em .2em;
+        font-size: 0.9rem;
+        font-weight: 500;
+        border-top: 2px solid var(--acc-2);
+        border-bottom: 2px solid var(--acc-2);
+        text-shadow: 2px 2px 25px black;
+        background-color: var(--dimmer);
+        scale: 1.05;
+    }
+    .pdiv {
+        background-color: var(--dimmer-2);
+        padding: .2em 3.8em;
+        text-align: center;
+        text-shadow: 2px 2px 25px black;
+        height: 100%;
+        color: var(--bg);
+        overflow: scroll;
+        border-top: 1px solid var(--acc-2);
+        border-bottom: 1px solid var(--acc-2);    
+    }
 }
 
 

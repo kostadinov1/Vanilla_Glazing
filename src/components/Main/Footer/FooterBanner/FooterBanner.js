@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import styles from './FooterBanner.module.css'
 
 
-const FooterBanner = () => {
+const FooterBanner = ({companyInfo}) => {
   
   return (
     <div className={`${styles.footer_banner}`}>

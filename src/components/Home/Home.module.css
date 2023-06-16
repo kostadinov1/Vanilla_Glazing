@@ -2,11 +2,21 @@
 .home {
 
 }
-
 .services {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: .6em;
     padding: .6em;
-    
+}
+
+
+@media (max-width:600px) {
+    .home {
+    }
+    .services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .4em;
+        padding: .1em;
+    }
 }

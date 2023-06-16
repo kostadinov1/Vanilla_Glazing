@@ -2,8 +2,6 @@
 .card {
     height: 30em;
     width: 100%;
-    /* min-height: 254px;
-    min-width: 190px; */
     position: relative;
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     border-radius: var(--b-radius);
@@ -51,5 +49,18 @@
   .card:hover .card_description {
     transform: translateY(100%);
   }
+
+  @media (max-width:600px) {
+
+    .card {
+      height: 25em;
+      width: 100%;
+      position: relative;
+      transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+      border-radius: var(--b-radius);
+      overflow: hidden;
+    }
+    
+}
   
   

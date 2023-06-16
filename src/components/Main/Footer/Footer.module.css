@@ -7,7 +7,9 @@
     width: 100vw;
     min-height: 16vh;
     padding: 1em;
-    background-color: var(--sec);
+    background-color: var(--prime);
+    border-top: 1px solid var(--text);
+
 }
 
 .ul {
@@ -30,5 +32,12 @@
 
 .li:hover {
     scale: 1.2;
-    /* color: var(--text); */
+}
+
+@media (max-width:600px) {
+
+    .useful_links{
+        display: none;
+    }
+    
 }

@@ -10,7 +10,7 @@ function Workflow
       <div className={` ${styles.img} ${styles.img_1}`}>
             <img src='/images/placeholders/measuring-02.jpg' alt=''></img>
             <div className={`${styles.img_description}`}>
-            <h2>Оглед и Оценка</h2>
+            <h2 className='section_title'>Оглед и Оценка</h2>
             <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -26,7 +26,7 @@ function Workflow
       <div className={` ${styles.img} ${styles.img_2} `}>
             <img src='/images/placeholders/measuring-01.jpg' alt=''></img>
             <div className={`${styles.img_description}`}>
-            <h2>Планиране и Подготовка</h2>
+            <h2 className='section_title'>Планиране и Подготовка</h2>
             <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -42,7 +42,7 @@ function Workflow
       <div className={` ${styles.img} ${styles.img_3}`}>
             <img src='/images/placeholders/production.jpg' alt=''></img>
             <div className={`${styles.img_description}`}>
-            <h2>Производство и Инсталация</h2>
+            <h2 className='section_title'>Монтаж</h2>
             <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -56,12 +56,14 @@ function Workflow
             </div>
       </div>
       <div className={` ${styles.img} ${styles.img_4}`}>
-            <div className={`${styles.img_description}`}>
-            <h2>Какво Предлагаме</h2>
-                <FancyCard></FancyCard>
-                <FancyCard></FancyCard>
-                <FancyCard></FancyCard>
-                <FancyCard></FancyCard>
+            <div className={`${styles.img_description} ${styles.offers}`}>
+            <h2 className={`${styles.offers_title} section_title`}>Какво Предлагаме</h2>
+                <div className={`${styles.fancy_cards}`} >
+                    <FancyCard></FancyCard>
+                    <FancyCard></FancyCard>
+                    <FancyCard></FancyCard>
+                    <FancyCard></FancyCard>
+                </div>
             </div>
       </div>
     </div>

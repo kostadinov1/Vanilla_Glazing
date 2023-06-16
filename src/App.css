@@ -2,21 +2,19 @@
     /* --- Colors --- */
     --prime: #263138;
     --sec: #8b98a2;
-    --sec-2: #DC5F00;
+    --sec-2: #303436;
     --acc-1: #00bfff;
     --acc-2: #ff4500;
     --acc-3: rgb(230, 121, 31);
-    --text: #a1b1bd;
+    --text: #bdc4ca;
 
     --bg: #cfd8dc;
-    --dimmer: rgba(0, 0, 0, 0.957);
-    --dimmer-2: rgba(0, 0, 0, 0.507);
-
-
+    --dimmer: rgba(0, 0, 0, 0.95);
+    --dimmer-2: rgba(0, 0, 0, 0.75);
+    --dimmer-3: rgba(0, 0, 0, 0.55);
     /* --- Values --- */
-    --b-radius: 8px;
+    --b-radius: 2px;
     --bg-color: rgba(209, 205, 21, 0.967);
-
     /*   Fonts
       font-family: 'Bodoni Moda', serif;
       font-family: 'Merriweather', serif;
@@ -24,8 +22,6 @@
 
      */
 }
-
-
 .body {
     color: var(--text);
     background-color: var(--prime);
@@ -35,12 +31,11 @@
 .main {
     position: relative;
     min-height: 100vh;
-
-
+    padding: .6em;
 }
 a {
     text-decoration: none;
-    color: var(--prime);
+    color: var(--text);
   }
   a:hover {
     color: var(--acc-2);
@@ -126,12 +121,54 @@ button {
     padding: .2em;
     width: 50vw;
     margin: .2em auto;
+    margin-bottom: .4em;
     border: 2px solid var(--acc-2);
     clip-path: polygon(4% 0, 96% 0, 100% 100%, 0% 100%);}
   
-.active {
-  background-color: var(--dimmer-2);
-  color: red;
+  .active {
+    background-color: var(--dimmer-2);
+    color: red;
+
+  }
+
+
+/* Media Query */
+@media (max-width:600px) {
+
+
+  .body {
+    color: var(--text);
+    background-color: var(--prime);
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  .main {
+    position: relative;
+    min-height: 100vh;
+    padding: .2em .8em;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--acc-2);
+  }
+
+    .section_title {
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: bold;
+      padding: .1em;
+      width: 80vw;
+      margin: .2em auto;
+      margin-bottom: .4em;
+      border: 1px solid var(--acc-2);
+      clip-path: polygon(4% 0, 96% 0, 100% 100%, 0% 100%);}
+    
+  .active {
+    background-color: black;
+    color: var(--acc-2);
+
+  }
 
 }
-

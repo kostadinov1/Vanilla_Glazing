@@ -6,7 +6,7 @@
     text-align: center;
     letter-spacing: .4pt;
     overflow: scroll;
-    background-color: var(--dimmer);
+    background-color: var(--dimmer-3);
     border-radius: var(--b-radius);
     border-top: .1em solid var(--text);
     border-bottom: .1em solid var(--text);
@@ -22,7 +22,7 @@
     border-radius: var(--b-radius);
     border-top: .1em solid var(--acc-2);
     border-bottom: .1em solid var(--acc-2);
-    background-color: var(--dimmer);
+    background-color: var(--dimmer-2);
 }
 
 .subtitle {

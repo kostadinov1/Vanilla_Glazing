@@ -1,20 +1,17 @@
 .workflow {
-    border: 1px solid var(--sec);
                    
 }
 .img {
     display: flex;
     margin: .2em;
-    border: 1px solid var(--sec);
+    border: 1px solid var(--prime);
     overflow: hidden;
     text-align: center;
     background-color: var(--dimmer-2);
 
 }
 .img_1 img{
-    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
-    
-    
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);    
 }
 .img_2 {
     flex-direction: row-reverse;
@@ -39,7 +36,6 @@
     background-size: cover;
     
 }
-
 .img_description {
     width: 100%;
     padding: 1.2em;
@@ -47,16 +43,105 @@
     line-height: 1.6;
     
 }
-
 .img_description h2 {
     padding: .2em;
 }
-
-
 .img_description p {
     padding: .6em;
     letter-spacing: 1.1pt;
     line-height: 1.6;
     font-size: 1.1rem;
 
+}
+.offers {
+    display: flex;
+    flex-direction: column;
+}
+.offers_title {
+    background-color: var(--sec);
+    color: var(--prime);
+}
+
+.fancy_cards {
+    display: flex;
+    gap: .6em;
+
+}
+
+
+@media (max-width:600px) {
+    .workflow {
+                   
+    }
+    .img {
+        display: flex;
+        flex-direction: column;
+        margin: .2em;
+        border: 1px solid var(--prime);
+        overflow: hidden;
+        text-align: center;
+        background-color: var(--dimmer-2);
+    
+    }
+    .img_1 img{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        
+        
+    }
+    .img_2 {
+        flex-direction: column;
+    }
+    .img_2 img{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    
+        flex-direction: row-reverse;
+    }
+    .img_3 img{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        
+    }
+    .img_4 .img_description {
+        display: flex;
+        gap: .2em;
+        align-items: center;
+        width: 100%;
+    
+        background-image: url('../../../../public/images/placeholders/production-01.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .img_description {
+        width: 100%;
+        padding: 1.2em;
+        letter-spacing: 1.1pt;
+        line-height: 1.6;
+        
+    }
+    .img_description h2 {
+        padding: .2em;
+    }
+    
+    
+    .img_description p {
+        padding: .6em;
+        letter-spacing: 1.1pt;
+        line-height: 1.6;
+        font-size: .8rem;
+    
+    }
+    .offers {
+        display: flex;
+        flex-direction: column;
+    }
+    .offers_title {
+        background-color: var(--sec);
+        color: var(--prime);    }
+    
+    .fancy_cards {
+        display: flex;
+        flex-direction: column;
+        gap: .6em;
+    
+    }
 }

@@ -8,7 +8,7 @@ const ProductCard = ({product}) => {
       <div className={`${styles.card}`}>
         <div className={`${styles.card_image}`}>
             <Link to={`/product/${product.id}`}>
-                <img src={product.image ? product.image : '/logo/dogramaLogo.ico'} alt=''></img>
+                <img src={product.image ? product.image : '/logo/dogramaLogoOnly.ico'} alt=''></img>
             </Link>
         </div>
         <div className={`${styles.card_description}`}>
