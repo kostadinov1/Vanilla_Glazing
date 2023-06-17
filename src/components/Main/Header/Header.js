@@ -3,10 +3,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { NavLink } from "react-router-dom";
 import { HomeFilled, PhoneFilled, ScheduleFilled, ShopFilled, ToolFilled } from '@ant-design/icons';
+import LanguageSwitcher from '../../LanguageSwitcher/LanguageSwitcher'
 
-
+import { useTranslation } from 'react-i18next'
+ 
+  
 function Header() {
+    const { t } = useTranslation();
+
     return (
+        
         <div className={`${styles.header}`}>
             <div className={styles.logo}>
                 <Link to={'/'}>
@@ -17,29 +23,31 @@ function Header() {
                 <NavLink to={'/'} 
                     activeClassName={'active'} 
                     className={styles.link}> 
-                    <HomeFilled className={`${styles.icon}`}/> Начало
+                    <HomeFilled className={`${styles.icon}`}/> {t('home')}
                 </NavLink>
                 <NavLink to={'/projects'} 
                     activeClassName={'active'} 
                     className={styles.link}>
-                    <ScheduleFilled className={`${styles.icon}`}/> Проекти
+                    <ScheduleFilled className={`${styles.icon}`}/> {t('projects')}
                 </NavLink>
                 <NavLink to={'/products'} 
                     activeClassName={'active'} 
                     className={styles.link}>
-                    <ShopFilled className={`${styles.icon}`}/> Продукти
+                    <ShopFilled className={`${styles.icon}`}/> {t('products')}
                 </NavLink>
                 <NavLink to={'/services'} 
                     activeClassName={'active'} 
                     className={styles.link}>
-                    <ToolFilled className={`${styles.icon}`}/> Услуги
+                    <ToolFilled className={`${styles.icon}`}/> {t('services')}
+
                 </NavLink>
                 <NavLink to={'/contacts'} 
                     activeClassName={'active'} 
                     className={styles.link}>
-                    <PhoneFilled className={`${styles.icon}`}/> Контакти
+                    <PhoneFilled className={`${styles.icon}`}/> {t('contacts')}
                 </NavLink>
-            </nav>        
+            </nav>    
+            <LanguageSwitcher></LanguageSwitcher>
         </div>
     )
     }
