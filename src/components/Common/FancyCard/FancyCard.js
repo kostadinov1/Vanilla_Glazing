@@ -2,7 +2,7 @@
 import styles from './FancyCard.module.css'
 import React from 'react'
 
-function FancyCard() {
+function FancyCard({card}) {
   return (
     <div>
       <div className={`${styles.container}`}>
@@ -17,8 +17,8 @@ function FancyCard() {
             </svg>
             
             <div className={`${styles.card__content}`}>
-            <p className={`${styles.card__title}`}>Lorem ipsum</p>
-            <p>Soluta dolor praesentium at quod autem omnis, amet earum nesciunt porro.</p>
+            <p className={`${styles.card__title}`}>{card.title}</p>
+            <p>{card.description}</p>
             </div>
         </div>
         </div>

@@ -1,11 +1,21 @@
 import styles from './Workflow.module.css'
 import React from 'react'
 import FancyCard from '../../Common/FancyCard/FancyCard'
-
 import { useTranslation } from 'react-i18next'
-function Workflow() {
 
+
+function Workflow() {
+      
       const { t } = useTranslation();
+      
+      const offerCards = [
+            {title: `${t('c1')}`, description: `${t('cd1')}`},
+            {title: `${t('c2')}`, description: `${t('cd2')}`},
+            {title: `${t('c3')}`, description: `${t('cd3')}`},
+            {title: `${t('c4')}`, description: `${t('cd4')}`},
+            {title: `${t('c5')}`, description: `${t('cd5')}`},
+
+      ]
 
   return (
     <div className={`${styles.workflow}`}>
@@ -34,10 +44,7 @@ function Workflow() {
             <div className={`${styles.img_description} ${styles.offers}`}>
             <h2 className={`${styles.offers_title} section_title`}>{t('whatWeOffer')}</h2>
                 <div className={`${styles.fancy_cards}`} >
-                    <FancyCard></FancyCard>
-                    <FancyCard></FancyCard>
-                    <FancyCard></FancyCard>
-                    <FancyCard></FancyCard>
+                  {offerCards.map((card) => <FancyCard card={card}/>)}
                 </div>
             </div>
       </div>
