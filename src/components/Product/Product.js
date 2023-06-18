@@ -25,7 +25,13 @@ const Product = () => {
 
             </div>
             <div className={`${styles.info_right}`}>
-
+                <div className={`${styles.right_card}`}>
+                    <h2 className={`${styles.title} section_title`}>{product.name}</h2>
+                    <div className={`${styles.info}`}>
+                        <p>Цена: {product.price} лева</p>
+                        <p>Описание: {product.description}</p>
+                    </div>
+			    </div>               
             </div>
         </div>
     </div>

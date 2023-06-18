@@ -6,6 +6,9 @@
     gap: .4em;
 }
 
+@media (max-width:900px) {}
+
+
 @media (max-width:600px) {
 
     .albums_list {

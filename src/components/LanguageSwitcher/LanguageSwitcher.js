@@ -25,12 +25,15 @@ const LanguageSwitcher = () => {
 
   return (
     <div className={`${styles.lang_switch}`}>
-      <div>{t('language')}</div>
-            <select value={lang} onChange={handleChange}> 
-                {languages.map(item => {
-                    return (<option key={item.value}
-                        value={item.value}>{item.text}</option>);
-                })}
+      <div>Language</div>
+            <select 
+                className={`${styles.option}`}
+                value={lang} onChange={handleChange}> 
+                  {languages.map(item => {
+                      return (<option
+                          key={item.value}
+                          value={item.value}>{item.text}</option>);
+                  })}
             </select>
     </div>
   );

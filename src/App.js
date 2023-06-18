@@ -12,10 +12,7 @@ import Services from './components/Services/Services';
 import Products from './components/Products/Products';
 import Product from './components/Product/Product';
 
-
 function App() {
-
-
   return (
     <div className='body'>
         <Header></Header>
@@ -24,14 +21,11 @@ function App() {
               <Route path='/' element={<Home />}/>
               <Route path='/projects' element={<Albums />}/>
               <Route path='/album/:id/' element={<Album />}/> 
-
               <Route path='/products' element={<Products />}/>
               <Route path='product/:id/' element={<Product/>}/>
               <Route path='/services' element={<Services />}/>
               <Route path='/contacts' element={<Contacts />}/>
-
               <Route path='*' element={<Error404 />}/>
-
             </Routes>
           </div>
         <Footer></Footer>

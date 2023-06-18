@@ -14,7 +14,7 @@ const FooterBanner = ({companyInfo}) => {
         <div className={`${styles.pdiv}`}>
           Where Can You Find Us?
         </div>
-        <div className={`${styles.subtitle}`}>{t('address')} {companyInfo.address} </div>
+        <div className={`${styles.subtitle}`}>{t('address')}: {companyInfo.address} </div>
         <Link to={'/contacts'}>{t('contacts')}</Link>
     </div>
   )

@@ -47,7 +47,6 @@ function Header() {
                     <PhoneFilled className={`${styles.icon}`}/> {t('contacts')}
                 </NavLink>
             </nav>    
-            <LanguageSwitcher></LanguageSwitcher>
         </div>
     )
     }

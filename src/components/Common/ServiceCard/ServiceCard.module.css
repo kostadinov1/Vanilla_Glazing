@@ -89,16 +89,19 @@
     transform: translateX(100%);
   }
   
+@media (max-width:900px) {}
+  
 
   @media (max-width:600px) {
     .card {
+      max-height: 60vh;
       background-color: var(--dimmer);
       background-repeat: no-repeat;
       background-size: cover;
   
       border-radius: var(--b-radius);
       color: white;
-      overflow: visible;
+      overflow: scroll;
       transform-style: preserve-3d;
       perspective: 1000px;
       transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
@@ -119,7 +122,7 @@
       justify-content: center;
       text-align: center;
       height: 100%;
-      overflow: hidden;
+      overflow: scroll;
     }
     
     .card_content .card_title {
@@ -127,20 +130,20 @@
       color: var(--text);
       font-weight: 700;
       text-transform: uppercase;
-      background-color: var(--dimmer);
-      padding: .2em .6em;
+      background-color: var(--prime);
+      padding: .2em 1.2em;
       border-radius: var(--b-radius);
     }
     
     .card_content .card_para {
       padding: .4em;
-      opacity: 0.8;
+      opacity: 0.96;
+      font-size: 14px;
       font-size: .7rem;
       background-color: var(--prime);
       overflow: scroll;
       border-radius: var(--b-radius);
       border: 1px solid var(--prime);
-  
     }
     
     .card:hover {

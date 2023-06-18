@@ -31,7 +31,7 @@ function Contacts() {
                         <p>{t('email')}: {companyInfo.email}</p>
                         <p>{t('phone')}: {companyInfo.phone}</p>
                     </div>
-			    </div>
+			          </div>
             </div>
             <SimpleMap ></SimpleMap>
         </div>

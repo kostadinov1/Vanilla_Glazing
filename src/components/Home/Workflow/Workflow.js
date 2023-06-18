@@ -40,7 +40,7 @@ function Workflow() {
             <p>{t('p3')}</p>
             </div>
       </div>
-      <div className={` ${styles.img} ${styles.img_4}`}>
+      <div className={` ${styles.img_4}`}>
             <div className={`${styles.img_description} ${styles.offers}`}>
             <h2 className={`${styles.offers_title} section_title`}>{t('whatWeOffer')}</h2>
                 <div className={`${styles.fancy_cards}`} >
