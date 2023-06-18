@@ -32,7 +32,42 @@
     padding: .7em .9em;
 }
 
-@media (max-width:900px) {}
+@media (max-width:900px) {
+
+
+.header {
+    display: flex;
+    gap: .2em;
+    background-color: var(--prime);
+    border: 1px solid var(--sec-3);
+    letter-spacing: 1.1pt;
+}
+.logo {
+    display: flex;
+    gap: .2em;
+    max-height: 40px;
+    max-width: 30px;
+}
+.logo_image {
+    object-fit: cover;
+}
+.ul {
+    margin: auto auto;
+    display: flex;
+    list-style: none;
+    gap: 2em;
+}
+.li {
+}
+.link:hover {
+    background-color: black;
+    color: var(--acc-2);
+}
+.link {
+    font-size: 0.7rem;
+    padding: .7em .9em;
+}
+}
 
 
 @media (max-width:600px) {

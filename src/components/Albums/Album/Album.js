@@ -26,8 +26,7 @@ const Album = () => {
   
   return (
     <>
-      {/* TODO fix the title */}
-      <Divider orientation="left">{`Album: ${album.name}`} </Divider>
+      <h2 className='section_title'>{album.name}</h2>
       <Image.PreviewGroup
           contentRender={{current: images.length, total:4}}
         >

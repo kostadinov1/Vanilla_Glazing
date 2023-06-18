@@ -14,9 +14,8 @@ function Home() {
   useEffect(() => {
     getAllServices()
       .then((res) => {
-        setServices(res)
-        console.log('res', res);})
-      .catch((res) => {console.log('res error', res);})
+        setServices(res)})
+      .catch((res) => {})
   }, [])                
   
   return (

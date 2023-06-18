@@ -1,11 +1,10 @@
 
 .lang_switch {
     display: flex;
+    /* flex-direction: column; */
     gap: .4em;
-    width: 14em;
-    position: absolute;
-    top: .4em;
-    right: 1em;
+    height: 50%;
+
     border-radius: var(--b-radius);
     border: 1px solid var(--acc-2);
     padding: .4em;
@@ -15,17 +14,31 @@
 .option {
     width: 100%;
 }
-@media (max-width:900px) {}
+@media (max-width:900px) {
+    .lang_switch {
+        display: flex;
+        flex-direction: column;
+        gap: .4em;
+        height: 50%;
+
+        border-radius: var(--b-radius);
+        border: 1px solid var(--acc-2);
+        padding: .4em;
+        font-size: .6rem;
+        background-color: var(--dimmer);
+    }
+    .option {
+        width: 100%;
+    }
+}
 
 @media (max-width:600px) {
 
     .lang_switch {
         display: flex;
+        flex-direction: column;
         gap: .4em;
-        width: 14em;
-        position: absolute;
-        top: .2em;
-        right: 4em;
+        height: 50%;
         border-radius: var(--b-radius);
         padding: .3em;
         font-size: .6rem;

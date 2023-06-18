@@ -10,13 +10,8 @@ const Products = () => {
 
   useEffect(() => {
     getAllProducts()
-		.then((res) => {
-			setProducts(res)
-			console.log(res, 'res in products ');
-		})
-		.catch((res) => {
-			console.log(res, 'res in products error');
-		})
+		.then((res) => {setProducts(res)})
+		.catch((res) => {})
   }, [])
 
   return (

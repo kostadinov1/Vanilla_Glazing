@@ -52,7 +52,19 @@
     transform: translateY(100%);
   }
 
-@media (max-width:900px) {}
+@media (max-width:900px) {
+
+  .text_title {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  
+  .text_body {
+    font-size: .8rem;
+    line-height: 130%;
+  }
+  
+}
 
   @media (max-width:600px) {
 

@@ -44,7 +44,54 @@
     border-bottom: 1px solid var(--acc-2);    
 }
 
-@media (max-width:900px) {}
+@media (max-width:900px) {
+
+    .banner {
+        position: absolute;
+        text-align: center;
+        height: 90vh;
+        width: 100vw;
+        font-size: 1.4rem;
+        font-family: 'Montserrat Alternates', sans-serif;
+        letter-spacing: 1pt;
+        padding: 2em 3em;
+        overflow: hidden;
+        z-index: 10;
+    }
+    
+    .title {
+        font-size: 4rem;
+        font-weight: bold;
+        font-family: 'Bodoni Moda', serif;
+        text-shadow: 2px 2px 25px black;
+        padding: .2em;
+        border-top: 1px solid var(--acc-2);
+        border-bottom: 1px solid var(--acc-2);
+        background-color: var(--dimmer);
+        scale: 1.05;
+    }
+    
+    .subtitle {
+        padding: .6em .2em;
+        font-size: 1.2rem;
+        font-weight: 500;
+        border-top: 2px solid var(--acc-2);
+        border-bottom: 2px solid var(--acc-2);
+        text-shadow: 2px 2px 25px black;
+        background-color: var(--dimmer-2);
+    }
+    
+    .pdiv {
+        font-size: .8rem;
+        background-color: var(--dimmer-2);
+        padding: 1em 4.8em;
+        text-align: center;
+        text-shadow: 2px 2px 25px black;
+        color: var(--bg);
+        border-top: 1px solid var(--acc-2);
+        border-bottom: 1px solid var(--acc-2);    
+    }
+}
 
 @media (max-width:600px) {
 

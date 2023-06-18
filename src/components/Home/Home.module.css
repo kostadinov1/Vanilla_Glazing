@@ -10,7 +10,15 @@
     background-image: url('./../../../public/images/placeholders/production-01.jpeg');
 }
 
-@media (max-width:900px) {}
+@media (max-width:900px) {
+
+    .home {
+
+    }
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media (max-width:600px) {
     .home {

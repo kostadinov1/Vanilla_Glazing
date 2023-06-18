@@ -10,12 +10,8 @@ const Product = () => {
     useEffect(() => {
         getProduct(id)
             .then((res) => {
-                setProduct(res)
-                console.log(res, 'res in product');
-            })
-            .catch((res) => {
-                console.log(res, 'res in product');
-            })
+                setProduct(res)})
+            .catch((res) => {})
     }, [id])
   return (
     <div className={`${styles.product}`}>

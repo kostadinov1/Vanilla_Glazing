@@ -110,7 +110,121 @@
 
 
 
-@media (max-width:900px) {}
+@media (max-width:900px) {
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+    width: 100%;
+
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sec-3);
+  background-image: linear-gradient(6deg, #813f08 0%, #6229083f 46%, #42464bde 100%);
+  background-size: cover;
+  height: 40vh;
+}
+
+.left_card {
+  width: 100%;
+  height: 100%;
+  padding: .4em;
+  border-radius: var(--b-radius);
+  overflow: hidden;
+}
+
+.left_card img {
+  object-fit: cover;
+  object-position: bottom;
+}
+
+
+.right_card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: .4em;
+  border-radius: var(--b-radius);
+  overflow: hidden;
+  background-color: var(--dimmer-3);
+  background-image: linear-gradient(6deg, #813f08 0%, #6229083f 46%, #42464bde 100%);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  cursor: pointer;
+}
+
+
+.right_card:hover {
+  transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.right_card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  z-index: 1;
+}
+
+.right_card:hover:before {
+  transform: translateX(-100%);
+}
+
+.right_card:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  z-index: 1;
+}
+
+.right_card:hover:after {
+  transform: translateX(100%);
+}
+
+.title {
+  background-color: var(--prime);
+  font-size: 1rem;
+}
+
+.info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  align-content: center;
+  justify-content: center;
+  padding: 2em;
+  height: 100%;
+  background-image: linear-gradient(43deg, #3c3e4732 0%, #140d093f 46%, #4203033f 100%);
+  letter-spacing: 1.2pt;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.info p {
+  padding: .2em;
+}
+
+
+}
 @media (max-width:600px) {
 
 

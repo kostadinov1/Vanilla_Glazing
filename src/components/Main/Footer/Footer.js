@@ -25,7 +25,6 @@ function Footer() {
             <li className={styles.li}><Link to={`/projects`}>{t('projects')}</Link></li>
             <li className={styles.li}><Link to={'/products'}>{t('products')}</Link></li>
             <li className={styles.li}><Link to={'/contacts'}> {t('contacts')}</Link></li>
-            <LanguageSwitcher></LanguageSwitcher>
         </ul>
   
         <ul className={`${styles.ul} ${styles.useful_links}`} type='list'>
@@ -38,6 +37,8 @@ function Footer() {
         </ul>
 
         <FooterBanner companyInfo={companyInfo}></FooterBanner>
+        <LanguageSwitcher></LanguageSwitcher>
+
     </section>
   )
 }
