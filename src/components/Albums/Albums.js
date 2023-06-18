@@ -3,6 +3,7 @@ import Meta from 'antd/lib/card/Meta';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getAllAlbums } from '../../api/albums'
+import AlbumCard from '../Common/AlbumCard/AlbumCard';
 import ProductCard from '../Common/ProductCard/ProductCard';
 import styles from './Albums.module.css'
 
@@ -23,8 +24,8 @@ import styles from './Albums.module.css'
 		<div className={`${styles.albums_list}`}>
 			{albums ? 
 			albums.map((album) => 
-					<ProductCard 
-						product={album} 
+					<AlbumCard 
+						album={album} 
 						key={album.id} />) 
 			: <p>no albums</p>}
 		</div>

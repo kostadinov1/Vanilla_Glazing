@@ -1,9 +1,8 @@
 .banner {
     position: absolute;
     text-align: center;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
-
     font-size: 1.4rem;
     font-family: 'Montserrat Alternates', sans-serif;
     letter-spacing: 1pt;
@@ -17,12 +16,11 @@
     font-weight: bold;
     font-family: 'Bodoni Moda', serif;
     text-shadow: 2px 2px 25px black;
-    padding: .2em .2em;
+    /* padding: .2em .2em; */
     border-top: 1px solid var(--acc-2);
     border-bottom: 1px solid var(--acc-2);
-    background-color: var(--dimmer-2);
-    
-
+    background-color: var(--dimmer);
+    scale: 1.05;
 }
 
 .subtitle {
@@ -32,14 +30,13 @@
     border-top: 2px solid var(--acc-2);
     border-bottom: 2px solid var(--acc-2);
     text-shadow: 2px 2px 25px black;
-
-    background-color: var(--dimmer);
-    scale: 1.05;
-
-}
-.pdiv {
     background-color: var(--dimmer-2);
-    padding: .2em 4.8em;
+}
+
+.pdiv {
+    font-size: 1.2rem;
+    background-color: var(--dimmer-2);
+    padding: 1em 4.8em;
     text-align: center;
     text-shadow: 2px 2px 25px black;
     color: var(--bg);
@@ -64,7 +61,7 @@
         font-size: 0.8rem;
         font-family: 'Montserrat Alternates', sans-serif;
         letter-spacing: 1pt;
-        padding: 1.2em 1.5em;
+        padding: 1.2em 1.1em;
         margin-left: auto;
         margin-right: auto;
         z-index: 10;
@@ -78,7 +75,7 @@
         padding: .2em .2em;
         border-top: 1px solid var(--acc-2);
         border-bottom: 1px solid var(--acc-2);
-        background-color: var(--dimmer-3);
+        background-color: var(--dimmer);
     }
     .subtitle {
         padding: .6em .2em;
@@ -87,10 +84,11 @@
         border-top: 2px solid var(--acc-2);
         border-bottom: 2px solid var(--acc-2);
         text-shadow: 2px 2px 25px black;
-        background-color: var(--dimmer);
+        background-color: var(--dimmer-2);
         scale: 1.05;
     }
     .pdiv {
+        font-size: 0.7rem;
         background-color: var(--dimmer-2);
         padding: .2em 3.8em;
         text-align: center;

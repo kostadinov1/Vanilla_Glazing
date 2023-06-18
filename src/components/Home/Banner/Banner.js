@@ -17,12 +17,10 @@ const Banner = () => {
 
   return (
     <div className={`${styles.banner}`}>
-        <div className={`${styles.title}`}>Stil Komfort M13</div>
         <div className={`${styles.subtitle}`}>{t('companyMoto')} </div>
+        <div className={`${styles.title}`}>Stil Komfort M13</div>
         <div className={`${styles.pdiv}`}>
-          <p>
-            {companyInfo.description}
-            </p>
+          <p>{t('companyDescription')}</p>
             <hr/>
         </div>
     </div>
