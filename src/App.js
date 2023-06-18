@@ -10,6 +10,7 @@ import Header from './components/Main/Header/Header';
 import Contacts from './components/Contacts/Contacts';
 import Services from './components/Services/Services';
 import Products from './components/Products/Products';
+import Product from './components/Product/Product';
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
               <Route path='/album/:id/' element={<Album />}/> 
 
               <Route path='/products' element={<Products />}/>
-              <Route path='product/:id/' element={<Products/>}/>
+              <Route path='product/:id/' element={<Product/>}/>
               <Route path='/services' element={<Services />}/>
               <Route path='/contacts' element={<Contacts />}/>
 

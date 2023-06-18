@@ -27,9 +27,9 @@ function Contacts() {
                 <div className={`${styles.right_card}`}>
                     <h2 className={`${styles.title} section_title`}>{t('contacts')}</h2>
                     <div className={`${styles.info}`}>
-                        <p>{t('phone')}: {companyInfo.address}</p>
+                        <p>{t('address')}: {companyInfo.address}</p>
                         <p>{t('email')}: {companyInfo.email}</p>
-                        <p>{t('address')}: {companyInfo.phone}</p>
+                        <p>{t('phone')}: {companyInfo.phone}</p>
                     </div>
 			    </div>
             </div>

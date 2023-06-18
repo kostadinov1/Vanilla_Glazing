@@ -8,7 +8,7 @@ function Workflow
   return (
     <div className={`${styles.workflow}`}>
       <div className={` ${styles.img} ${styles.img_1}`}>
-            <img src='/images/placeholders/measuring-02.jpg' alt=''></img>
+            <img src='/images/placeholders/measuring-01.jpg' alt=''></img>
             <div className={`${styles.img_description}`}>
             <h2 className='section_title'>Оглед и Оценка</h2>
             <p>
@@ -24,7 +24,7 @@ function Workflow
             </div>
       </div>
       <div className={` ${styles.img} ${styles.img_2} `}>
-            <img src='/images/placeholders/measuring-01.jpg' alt=''></img>
+            <img src='/images/placeholders/measuring-02.jpg' alt=''></img>
             <div className={`${styles.img_description}`}>
             <h2 className='section_title'>Планиране и Подготовка</h2>
             <p>

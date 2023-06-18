@@ -8,6 +8,8 @@
     overflow: hidden;
     text-align: center;
     background-color: var(--dimmer-2);
+    height: 50vh;
+
 
 }
 .img_1 img{
