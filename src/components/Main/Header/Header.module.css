@@ -3,7 +3,7 @@
     display: flex;
     gap: .2em;
     background-color: var(--prime);
-    border: 1px solid var(--text);
+    border: 1px solid var(--sec-3);
     letter-spacing: 1.1pt;
 }
 .logo {
@@ -28,7 +28,7 @@
     color: var(--acc-2);
 }
 .link {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: .7em .9em;
 }
 

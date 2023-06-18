@@ -1,12 +1,14 @@
 
-import { Card, Col, Divider, Row, Image } from 'antd'
 import React, { useEffect, useState } from 'react'
 import styles from './Contacts.module.css'
 import { getCompanyInfo } from '../../api/companyInfo'
 import SimpleMap from './Map'
-import ContactsCard from '../Common/ContactsCard/ContactsCard'
+import { useTranslation } from 'react-i18next'
+
 
 function Contacts() {
+    const { t } = useTranslation();
+
   const [companyInfo, setCompanyInfo] = useState({})
   useEffect(() => {
     getCompanyInfo()
@@ -19,13 +21,20 @@ function Contacts() {
     <>
         <div className={`${styles.contacts}`}>
             <div className={`${styles.banner}`}>
-				<h2 className={`${styles.title} section_title`}>Contacts</h2>
+                <div className={`${styles.left_card}`}>
+                    <img src={'./images/placeholders/contacts.jpg'} alt='' />
+                </div>
+                <div className={`${styles.right_card}`}>
+                    <h2 className={`${styles.title} section_title`}>{t('contacts')}</h2>
+                    <div className={`${styles.info}`}>
+                        <p>{t('phone')}: {companyInfo.address}</p>
+                        <p>{t('email')}: {companyInfo.email}</p>
+                        <p>{t('address')}: {companyInfo.phone}</p>
+                    </div>
+			    </div>
             </div>
-			<div className={`${styles.info}`}>
-
-			</div>
+            <SimpleMap ></SimpleMap>
         </div>
-        <SimpleMap></SimpleMap>
     </>
   )
 }

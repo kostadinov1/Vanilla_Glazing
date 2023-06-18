@@ -5,7 +5,8 @@ import styles from './LanguageSwitcher.module.css'
 const languages = [
 { value: '', text: "Options" },
 { value: 'en', text: "English" },
-{ value: 'bg', text: "Bulgarian" },
+{ value: 'bg', text: "Български" },
+{ value: 'ru', text: "Русский" },
 
 ]
 

@@ -3,6 +3,7 @@
     --prime: #263138;
     --sec: #8b98a2;
     --sec-2: #303436;
+    --sec-3: #525659;
     --acc-1: #00bfff;
     --acc-2: #ff4500;
     --acc-3: rgb(230, 121, 31);
@@ -116,14 +117,18 @@ button {
 
 .section_title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     padding: .2em;
-    width: 50vw;
+    width: 80%;
     margin: .2em auto;
     margin-bottom: .4em;
-    border: 2px solid var(--acc-2);
-    clip-path: polygon(4% 0, 96% 0, 100% 100%, 0% 100%);}
+    border-bottom: 2px solid var(--acc-2);
+    border-top: 2px solid var(--acc-2);
+    clip-path: polygon(4% 0, 96% 0, 100% 100%, 0% 100%);
+  
+  }
+    
   
   .active {
     background-color: var(--dimmer-2);
