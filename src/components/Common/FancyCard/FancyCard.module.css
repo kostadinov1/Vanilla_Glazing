@@ -169,17 +169,19 @@
     margin-top: 35px;
     margin-bottom: 10px;
     font-weight: 800;
-    font-size: .9rem;
     letter-spacing: 0.01em;
   }
   
   .card__content {
     margin-top: -1rem;
-    font-size: .4rem;
     opacity: 0;
     animation: ContentFadeIn .8s 1.6s forwards;
+    /* font-size: .4rem; */
   }
+  .card__description {
+    /* font-size: .4rem; */
 
+  }
  
   
   .card__svg {
@@ -297,7 +299,7 @@
     margin-bottom: 10px;
     font-weight: 800;
     letter-spacing: 0.01em;
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
   }
   
   .card__content {

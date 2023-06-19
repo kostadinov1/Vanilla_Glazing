@@ -3,7 +3,6 @@
     background-color: var(--dimmer);
     background-repeat: no-repeat;
     background-size: cover;
-
     border-radius: var(--b-radius);
     color: white;
     overflow: scroll;
@@ -12,11 +11,14 @@
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
     border: 1px solid var(--prime);
 
+    padding: .2em;
+
   }
   
   .card_content {
+
     letter-spacing: 1.1pt;
-    padding: 20px;
+    padding: .2em;
     position: relative;
     z-index: 1;
     display: flex;
@@ -109,7 +111,7 @@
   
   .card_content {
     letter-spacing: 1.1pt;
-    padding: 20px;
+    padding: .2em;
     position: relative;
     z-index: 1;
     display: flex;

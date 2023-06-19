@@ -18,9 +18,14 @@ const Banner = () => {
   return (
     <div className={`${styles.banner}`}>
         <div className={`${styles.subtitle}`}>{t('companyMoto')} </div>
-        <div className={`${styles.title}`}>Stil Komfort M13</div>
+        <div className={`${styles.title_box}`}>
+            <div className={styles.logo}>
+                <img src='/logo/dogramaLogoOnly.png'  alt='' className={styles.logo_image} />
+            </div>
+            <div className={`${styles.title}`}>Stil Komfort M13</div>
+        </div>
         <div className={`${styles.pdiv}`}>
-          <p>{t('companyDescription')}</p>
+          	<p>{t('companyDescription')}</p>
             <hr/>
         </div>
     </div>

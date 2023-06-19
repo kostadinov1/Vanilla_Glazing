@@ -33,6 +33,7 @@
     position: relative;
     min-height: 70vh;
     padding: .6em;
+    width: 100vw;
 }
 a {
     text-decoration: none;

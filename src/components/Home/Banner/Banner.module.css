@@ -2,7 +2,7 @@
     position: absolute;
     text-align: center;
     height: 90vh;
-    width: 100vw;
+    /* width: 100vw; */
     font-size: 1.4rem;
     font-family: 'Montserrat Alternates', sans-serif;
     letter-spacing: 1pt;
@@ -11,19 +11,42 @@
     z-index: 10;
 }
 
-.title {
-    font-size: 8rem;
-    font-weight: bold;
-    font-family: 'Bodoni Moda', serif;
-    text-shadow: 2px 2px 25px black;
-    /* padding: .2em .2em; */
+.title_box {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 1.4em;
     border-top: 1px solid var(--acc-2);
     border-bottom: 1px solid var(--acc-2);
     background-color: var(--dimmer);
     scale: 1.05;
+    padding: .2em .1em;
+
+}
+
+.logo {
+    max-height: 320px;
+    max-width: 190px;
+    z-index: 1;
+    padding: .4em;
+    
+}
+.logo_image {
+    object-fit: cover;
+}
+
+.title {
+    font-size: 7rem;
+    font-weight: bold;
+    font-family: 'Bodoni Moda', serif;
+    text-shadow: 2px 2px 25px black;
+    padding: 0em .01em;
+
 }
 
 .subtitle {
+    position: relative;
     padding: .6em .2em;
     font-size: 2rem;
     font-weight: 500;
@@ -44,6 +67,7 @@
     border-bottom: 1px solid var(--acc-2);    
 }
 
+
 @media (max-width:900px) {
 
     .banner {
@@ -59,16 +83,39 @@
         z-index: 10;
     }
     
-    .title {
-        font-size: 4rem;
-        font-weight: bold;
-        font-family: 'Bodoni Moda', serif;
-        text-shadow: 2px 2px 25px black;
-        padding: .2em;
+    .title_box {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        gap: .3em;
         border-top: 1px solid var(--acc-2);
         border-bottom: 1px solid var(--acc-2);
         background-color: var(--dimmer);
         scale: 1.05;
+        padding: .2em .1em;
+    
+    }
+    
+    .logo {
+        max-height: 120px;
+        max-width: 90px;
+        z-index: 1;
+        padding: .4em;
+        
+    }
+    .logo_image {
+        object-fit: cover;
+    }
+    
+
+    .title {
+        font-size: 3.5rem;
+        font-weight: bold;
+        font-family: 'Bodoni Moda', serif;
+        text-shadow: 2px 2px 25px black;
+        padding: 0em .01em;
+    
     }
     
     .subtitle {
@@ -115,25 +162,50 @@
         z-index: 10;
     }
     
-    .title {
-        font-size: 2rem;
-        font-weight: bold;
-        font-family: 'Bodoni Moda', serif;
-        text-shadow: 2px 2px 25px black;
-        padding: .2em .2em;
+    .title_box {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        gap: .3em;
         border-top: 1px solid var(--acc-2);
         border-bottom: 1px solid var(--acc-2);
         background-color: var(--dimmer);
+        scale: 1.05;
+        padding: .2em .1em;
+    
     }
+    
+    .logo {
+        max-height: 90px;
+        max-width: 42px;
+        z-index: 1;
+        /* padding: .4em; */
+        /* margin-left: 1em; */
+        
+    }
+    .logo_image {
+        object-fit: cover;
+    }
+    
+
+    .title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: 'Bodoni Moda', serif;
+        text-shadow: 2px 2px 25px black;
+        padding: 0em .01em;
+    
+    }
+    
     .subtitle {
         padding: .6em .2em;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-weight: 500;
         border-top: 2px solid var(--acc-2);
         border-bottom: 2px solid var(--acc-2);
         text-shadow: 2px 2px 25px black;
         background-color: var(--dimmer-2);
-        scale: 1.05;
     }
     .pdiv {
         font-size: 0.7rem;

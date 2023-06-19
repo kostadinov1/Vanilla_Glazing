@@ -17,8 +17,8 @@ function FancyCard({card}) {
             </svg>
             
             <div className={`${styles.card__content}`}>
-            <p className={`${styles.card__title}`}>{card.title}</p>
-            <p>{card.description}</p>
+				<p className={`${styles.card__title}`}>{card.title}</p>
+				<p className={`${styles.card__description}`}>{card.description}</p>
             </div>
         </div>
         </div>

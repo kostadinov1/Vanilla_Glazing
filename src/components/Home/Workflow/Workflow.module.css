@@ -127,7 +127,7 @@
         padding: .6em;
         letter-spacing: 1.1pt;
         line-height: 1.6;
-        font-size: .8rem;
+        font-size: .9rem;
     
     }
     .offers {
@@ -146,9 +146,6 @@
         align-items: center;
         gap: .4em;
     
-    }
-    .fancy_card {
-        /* font-size: .9rem; */
     }
 }
 
