@@ -19,7 +19,10 @@ const LanguageSwitcher = () => {
   const handleChange = e => {
       e.preventDefault()
       setLang(e.target.value);
-      let loc = "http://localhost:3000/";
+      // THIS HAS TO BE AND EMPTY STRING ON PRODUCTION
+      // AND "http://localhost:3000" WHEN LOCAL DEVELOPMENT
+      // THIS FUNCTIONS CHANGER THE   >>>>>>>> URL <<<<<<<<<
+      let loc = "";
       window.location.replace(loc + "?lng=" + e.target.value);
   }
 

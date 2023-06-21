@@ -39,7 +39,7 @@
 .title {
     font-size: 7rem;
     font-weight: bold;
-    font-family: 'Bodoni Moda', serif;
+    font-family: 'Cormorant', 'Bodoni Moda', 'Montserat', monospace, serif;
     text-shadow: 2px 2px 25px black;
     padding: 0em .01em;
 

@@ -17,16 +17,16 @@
     --b-radius: 2px;
     --bg-color: rgba(209, 205, 21, 0.967);
     /*   Fonts
+    font-family: 'Cormorant', serif;
       font-family: 'Bodoni Moda', serif;
       font-family: 'Merriweather', serif;
       font-family: 'Montserrat', sans-serif;
-
      */
 }
 .body {
     color: var(--text);
     background-color: var(--prime);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', monospace, sans-serif;
 
 }
 .main {
