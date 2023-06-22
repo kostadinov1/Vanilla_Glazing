@@ -22,7 +22,7 @@ const Banner = () => {
             <div className={styles.logo}>
                 <img src='/logo/dogramaLogoOnly.png'  alt='' className={styles.logo_image} />
             </div>
-            <div className={`${styles.title}`}>Stil Komfort M13</div>
+            <div className={`${styles.title}`}>{t('companyName')}</div>
         </div>
         <div className={`${styles.pdiv}`}>
           	<p>{t('companyDescription')}</p>

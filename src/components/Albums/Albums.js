@@ -6,8 +6,11 @@ import { getAllAlbums } from '../../api/albums'
 import AlbumCard from '../Common/AlbumCard/AlbumCard';
 import ProductCard from '../Common/ProductCard/ProductCard';
 import styles from './Albums.module.css'
+import { useTranslation } from 'react-i18next'
 
   const Albums = () => {
+    const {t} = useTranslation()
+
     const [albums, setAlbums] = useState([]);
     useEffect(() => {
         getAllAlbums()
@@ -20,7 +23,7 @@ import styles from './Albums.module.css'
       <>
 
     <div className={`${styles.albums}`}>
-		<div className={`section_title`}>Завършени Проекти</div>
+		<div className={`section_title`}>{t('projects')}</div>
 		<div className={`${styles.albums_list}`}>
 			{albums ? 
 			albums.map((album) => 

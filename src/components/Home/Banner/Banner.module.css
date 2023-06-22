@@ -39,9 +39,10 @@
 .title {
     font-size: 7rem;
     font-weight: bold;
-    font-family: 'Cormorant', 'Bodoni Moda', 'Montserat', monospace, serif;
+    font-family:  'Bodoni Moda', 'Cormorant','Montserat', monospace, serif;
     text-shadow: 2px 2px 25px black;
     padding: 0em .01em;
+    letter-spacing: 3pt;
 
 }
 
@@ -112,7 +113,7 @@
     .title {
         font-size: 3.5rem;
         font-weight: bold;
-        font-family: 'Bodoni Moda', serif;
+        font-family:  'Bodoni Moda', 'Cormorant','Montserat', monospace, serif;
         text-shadow: 2px 2px 25px black;
         padding: 0em .01em;
     
@@ -192,7 +193,7 @@
     .title {
         font-size: 1.5rem;
         font-weight: bold;
-        font-family: 'Bodoni Moda', serif;
+        font-family:  'Bodoni Moda', 'Cormorant','Montserat', monospace, serif;
         text-shadow: 2px 2px 25px black;
         padding: 0em .01em;
     

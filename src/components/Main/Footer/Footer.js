@@ -27,14 +27,14 @@ function Footer() {
             <li className={styles.li}><Link to={'/contacts'}> {t('contacts')}</Link></li>
         </ul>
   
-        <ul className={`${styles.ul} ${styles.useful_links}`} type='list'>
+        {/* <ul className={`${styles.ul} ${styles.useful_links}`} type='list'>
             <li><a href='#'>Useful Link</a></li>
             <li><a href='#'>Useful Link</a></li>
             <li><a href='#'>Useful Link</a></li>
             <li><a href='#'>Useful Link</a></li>
             <li><a href='#'>Useful Link</a></li>
             <li><a href='#'>Useful Link</a></li>
-        </ul>
+        </ul> */}
 
         <FooterBanner companyInfo={companyInfo}></FooterBanner>
         <LanguageSwitcher></LanguageSwitcher>

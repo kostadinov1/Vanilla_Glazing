@@ -18,6 +18,9 @@
 .ul {
     margin: auto auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     list-style: none;
     gap: 2em;
 }
@@ -46,7 +49,7 @@
     display: flex;
     gap: .2em;
     max-height: 40px;
-    max-width: 30px;
+    max-width: 32px;
 }
 .logo_image {
     object-fit: cover;
@@ -64,7 +67,7 @@
     color: var(--acc-2);
 }
 .link {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     padding: .7em .9em;
 }
 }
@@ -89,7 +92,7 @@
         margin: auto auto;
         display: flex;
         list-style: none;
-        gap: .2em;
+        gap: 0em;
     }
     .li {
     }
@@ -98,7 +101,8 @@
         color: var(--acc-2);
     }
     .link {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
+        letter-spacing: 0;
         padding: .3em .4em;
     }
     .icon {
