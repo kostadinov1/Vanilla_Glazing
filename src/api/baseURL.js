@@ -1,5 +1,5 @@
 
 // THIS BASE URL HAS TO BE AN EMPTY STRING ON PRODUCTION
 // AND LOCAHOST ON LOCAL DEVELOPMENT:
-// export const baseURL = 'http://127.0.0.1:8000'
-export const baseURL = ''
+export const baseURL = 'http://127.0.0.1:8000'
+// export const baseURL = ''

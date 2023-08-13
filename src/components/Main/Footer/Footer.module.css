@@ -32,6 +32,14 @@
 .li:hover {
     scale: 1.2;
 }
+
+.credits {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--acc-2);
+    max-width: 20em;
+}
 @media (max-width:900px) {
     .footer {
         position: relative;

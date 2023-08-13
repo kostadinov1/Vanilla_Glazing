@@ -1,1 +1,9 @@
 .env.development
+.env.deployment
+.env.local
+.env
+
+.env.development/
+.env.deployment/
+.env.local/
+.env/

@@ -12,6 +12,10 @@ const center = {
 };
 
 function SimpleMap() {
+
+  // console.log(process.env.REACT_APP_GOOGLE_MAPS_API_KEY ? 'key' : 'no key');
+
+
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY

@@ -26,6 +26,7 @@ function Footer() {
             <li className={styles.li}><Link to={'/products'}>{t('products')}</Link></li>
             <li className={styles.li}><Link to={'/contacts'}> {t('contacts')}</Link></li>
         </ul>
+        <Link to={'credits'} className={`${styles.credits}`}>IMAGES USED TO CREATE THIS WEBSITE. THANK YOU!!!</Link>
   
         {/* <ul className={`${styles.ul} ${styles.useful_links}`} type='list'>
             <li><a href='#'>Useful Link</a></li>

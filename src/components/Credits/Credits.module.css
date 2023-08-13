@@ -1,0 +1,132 @@
+.credits {
+    position: relative;
+    min-width: 100vh;
+    letter-spacing: 1.1pt;
+}
+.credit_title {
+    font-size: 6rem;
+    font-weight: bold;
+    padding: .2em;
+    text-align: center;
+    color: var(--acc-2);
+    background-color: var(--blue-2);
+}
+.credit_subtitle {
+
+    padding: 1em 3em;
+    text-align: center;
+    background-color: var(--blue-2);
+}
+
+.credits_grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    padding: 1em;
+
+}
+
+.credit_box {
+    position: relative;
+    max-height: 30vh;
+    max-width: 40vw;
+    background-color: var(--dimmer-3);
+    padding: .6em;
+}
+.credit_img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.credit_message_box {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    transition: all ease-in-out 0.5s;
+    
+}
+.credit_message_box:hover {
+    scale: 1.05;
+    z-index: 1;
+}
+
+
+
+/* <========== Media Query ================> */
+
+/* TABLET */
+
+@media (max-width:900px) {
+    .credit_title {
+        max-width: 100vw;
+    }
+    .credit_subtitle {
+        max-width: 100vw;
+    }
+    .credits_grid {
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        }
+}
+/* MOBILE */
+
+@media (max-width:600px) {
+
+    .credits {
+    position: relative;
+    min-width: 100vw;
+    letter-spacing: 1.1pt;
+}
+.credit_title {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: .2em;
+    text-align: center;
+    color: var(--acc-2);
+    background-color: var(--blue-2);
+}
+.credit_subtitle {
+    font-size: .9rem;
+    padding: 1em 3em;
+    text-align: center;
+    background-color: var(--blue-2);
+}
+
+.credits_grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+    padding: 1em;
+
+}
+
+.credit_box {
+    position: relative;
+    max-height: 30vh;
+    max-width: 90vw;
+    background-color: var(--dimmer-3);
+    padding: .6em;
+}
+.credit_img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.credit_message_box {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    transition: all ease-in-out 0.5s;
+    
+}
+.credit_message_box:hover {
+    scale: 1.05;
+    z-index: 1;
+}
+
+}

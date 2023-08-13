@@ -11,8 +11,10 @@ import Contacts from './components/Contacts/Contacts';
 import Services from './components/Services/Services';
 import Products from './components/Products/Products';
 import Product from './components/Product/Product';
+import Credits from './components/Credits/Credits';
 
 function App() {
+
   return (
     <div className='body'>
         <Header></Header>
@@ -25,6 +27,7 @@ function App() {
               <Route path='product/:id/' element={<Product/>}/>
               <Route path='/services' element={<Services />}/>
               <Route path='/contacts' element={<Contacts />}/>
+              <Route path='/credits' element={<Credits />}/>
               <Route path='*' element={<Error404 />}/>
             </Routes>
           </div>

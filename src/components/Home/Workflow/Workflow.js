@@ -44,7 +44,7 @@ function Workflow() {
             <div className={`${styles.img_description} ${styles.offers}`}>
             <h2 className={`${styles.offers_title} section_title`}>{t('whatWeOffer')}</h2>
                 <div className={`${styles.fancy_cards}`} >
-                  {offerCards.map((card) => <FancyCard card={card}/>)}
+                  {offerCards.map((card) => <FancyCard card={card} key={card.id}/>)}
                 </div>
             </div>
       </div>

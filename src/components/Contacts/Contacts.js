@@ -33,7 +33,7 @@ function Contacts() {
                     </div>
 			          </div>
             </div>
-            <SimpleMap ></SimpleMap>
+            {/* <SimpleMap ></SimpleMap> */}
         </div>
     </>
   )
